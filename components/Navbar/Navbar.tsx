@@ -6,7 +6,7 @@ import { Button } from '../ui/button'
 
 const Navbar = () => {
   return (
-    <main className='flex justify-between items-center w-full h-[102px] bg-dark-1 px-4 py-1'>
+    <main className='flex justify-between items-center w-full h-[102px] bg-dark-1 px-4 py-1 z-10'>
         <div className='flex justify-center items-center gap-x-3'>
             <Image src={Applogo} alt='app-logo' className='w-14 h-14 rounded-full shadow-dark-2 shadow-lg hover:scale-105 hover:translate-x-1 hover:shadow-lg hover:shadow-dark-5 transition-all duration-300 ease-in-out'/>
             <h1 className='font-bold hover:translate-x-2 hover:scale-110 hover:mr-3 transition-all duration-300 ease-in-out'>
