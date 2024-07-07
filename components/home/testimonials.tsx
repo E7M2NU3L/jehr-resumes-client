@@ -157,7 +157,7 @@ const Testimonials = () => {
                 <h1 className='text-2xl font-bold pb-[2rem]' style={{
                     fontFamily: "Baskervville Sc, serif"
                 }} >
-                I couldn't believe how easy it was to create a professional resume using this application. It saved me so much time and effort!
+                I couldnt believe how easy it was to create a professional resume using this application. It saved me so much time and effort!
                 </h1>
                 <section className='flex items-center gap-x-[3rem]'>
                 <main className='flex justify-around items-center gap-x-3'>
