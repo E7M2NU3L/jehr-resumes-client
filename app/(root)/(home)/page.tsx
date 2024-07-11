@@ -11,6 +11,7 @@ import Testimonials from '@/components/home/testimonials'
 import React from 'react'
 
 const Home = () => {
+
   return (
     <>
       <Hero />

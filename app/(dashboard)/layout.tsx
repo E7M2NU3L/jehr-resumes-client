@@ -7,7 +7,7 @@ interface ChildrenProps  {
 
 const DashboardLayout = ({children} : ChildrenProps) => {
   return (
-    <div>
+    <div className='overflow-x-hidden overflow-y-scroll h-screen scroll-smooth scrollbar-hide'>
         <Dashnav />
         {children}
     </div>

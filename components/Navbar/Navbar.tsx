@@ -1,19 +1,19 @@
 "use client"
 
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { Button } from '../ui/button'
 import {NavDrawer} from './navdrawer'
-import { More } from './navmore'
+import { LogoutModal } from '../auth/logoutModal'
+import {useAppSelector } from '@/store/store'
 
 const Navbar = () => {
-    const [isLoggedin, setIsLoggedin] = useState<boolean>(false);
-
+    const userData: any = useAppSelector((state) => state.auth.userData);
   return (
     <main className='flex justify-between items-center w-full h-[10vh] px-4 py-1 z-10'>
-        <div className='flex justify-center items-center gap-x-1 hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out py-3'>
-            <Link href={"/"}>
+        <div >
+            <Link href={"/"} className='flex justify-center items-center gap-x-1 hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out py-3'>
             <Image src={"/images/web-app-logo.png"} width={42} height={42} alt='app-logo' className=' rounded-full shadow-dark-2 shadow-lg  hover:shadow-lg hover:shadow-dark-5 transition-all duration-300 ease-in-out'/>
             <h1 className='font-normal hidden md:block text-lg' style={{
                 fontFamily: "Anton SC, sans-serif",
@@ -62,22 +62,7 @@ const Navbar = () => {
                 </li>
         </ul>
 
-        {isLoggedin ? (
-            <>
-                <div className='justify-center items-center hidden md:flex gap-x-3'>
-                    <Button variant={"outline"}>
-                        <Link href="/sign-up">
-                            Sign-up
-                        </Link>
-                    </Button>
-                    <Button className='' variant={"default"}>
-                        <Link href={"/sign-in"}>
-                            Login
-                        </Link>
-                    </Button>
-                </div>
-            </>
-        ) : (
+        {(userData?.status) ? (
             <>
             <div className='justify-center items-center hidden md:flex gap-x-3'>
                 <Button variant={"primary"}>
@@ -85,10 +70,23 @@ const Navbar = () => {
                         Dashboard
                     </Link>
                 </Button>
-                <Button variant={"destructive"}>
-                    Logout
-                </Button>
+                <LogoutModal />
             </div>
+            </>
+        ) : (
+            <>
+            <div className='justify-center items-center hidden md:flex gap-x-3'>
+                    <Button variant={"secondary"}>
+                        <Link href="/sign-up">
+                            Sign-up
+                        </Link>
+                    </Button>
+                    <Button className='' variant={"primary"}>
+                        <Link href={"/sign-in"}>
+                            Login
+                        </Link>
+                    </Button>
+                </div>
             </>
         )}
 

@@ -18,7 +18,8 @@ const buttonVariants = cva(
           "border border-dark-5 text-dark-5 rounded-md hover:bg-dark-1/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        primary: "bg-dark-5 text-white hover:bg-dark-5/80 transition-all duration-300 ease-in-out"
+        primary: "bg-dark-5 text-white hover:bg-dark-5/80 transition-all duration-300 ease-in-out",
+        tertiary: ""
       },
       size: {
         default: "h-10 px-4 py-2",

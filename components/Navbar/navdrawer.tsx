@@ -13,22 +13,10 @@ import {
 import { MenuIcon } from "lucide-react"
 import Link from "next/link"
 import React from "react"
+import { LogoutModal } from "../auth/logoutModal"
 
 export function NavDrawer() {
   const [isLoggedin, setIsLoggedin] = React.useState<boolean>(true);
-  const handleLogout = (e : React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    try {
-      
-    } catch (error) {
-      if (error instanceof Error) {
-        console.log(error.message);
-      }
-      else {
-        console.log("Unknown Error");
-      }
-    }
-  }
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -91,9 +79,7 @@ export function NavDrawer() {
                     Dashboard  
                   </Link>
                 </Button>
-                <Button variant={"destructive"} onClick={handleLogout}>
-                  Logout
-                </Button>
+                <LogoutModal />
                 </section>
               </>
             ) : (

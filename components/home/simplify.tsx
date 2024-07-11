@@ -6,8 +6,8 @@ import { GiCubeforce } from 'react-icons/gi'
 
 const Simplify = () => {
   return (
-    <div className='min-h-screen max-w-7xl mx-auto'>
-        <section className='flex justify-between items-center py-[3.5rem] flex-col md:flex-row'>
+    <div className='min-h-screen max-w-7xl mx-auto px-[1rem] md:px-0'>
+        <section className='flex justify-between items-center py-[3.5rem] flex-col md:flex-row gap-y-[1.3rem] md:gap-y-0'>
             <main className=' max-w-2xl'>
                 <Badge className='bg-dark-5 text-dark-4 font-bold mb-3' style={{
                     fontFamily: "Baskervville SC, serif"
@@ -28,7 +28,7 @@ const Simplify = () => {
                 </h1>
             </main>
         </section>
-        <section className='flex justify-around items-start gap-x-[1rem] md:flex-row flex-col pt-[3rem]'>
+        <section className='flex justify-around items-start gap-x-[1rem] md:flex-row flex-col pt-[3rem] gap-y-[1.5rem] md:gap-y-0'>
             <main className='max-w-xl'>
                 <GiCubeforce className='text-3xl font-bold' />
                 <h1 className='text-2xl font-bold md:text-4xl text-dark-5 py-[1.5rem]' style={{
@@ -36,7 +36,7 @@ const Simplify = () => {
                 }}>
                 Scrape LinkedIn and GitHub Data
                 </h1>
-                <h1 className='text-lg pb-[3.5rem] pt-2 font-bold text-black' style={{
+                <h1 className='text-lg md:pb-[3.5rem] pb-0 pt-2 font-bold text-black' style={{
                     fontFamily: "BAskervville SC, serif"
                 }}>
                 Easily import your professional information from LinkedIn and GitHub to create a comprehensive resume.
@@ -57,7 +57,7 @@ const Simplify = () => {
                 }}>
                 Inbuilt Editor for Customization
                 </h1>
-                <h1 className='text-lg pb-[3.5rem] pt-2 font-bold text-black' style={{
+                <h1 className='text-lg md:pb-[3.5rem] pb-0 pt-2 font-bold text-black' style={{
                     fontFamily: "BAskervville SC, serif"
                 }}>
                 Personalize your resume with our intuitive inbuilt editor, allowing you to tailor it to your specific needs.
@@ -70,7 +70,7 @@ const Simplify = () => {
                 }}>
                 Create Professional CVs with custom templates
                 </h1>
-                <h1 className='text-lg pb-[3.5rem] pt-2 font-bold text-black' style={{
+                <h1 className='text-lg md:pb-[3.5rem] pb-0 pt-2 font-bold text-black' style={{
                     fontFamily: "BAskervville SC, serif"
                 }}>
                 In addition to resumes, our platform supports the creation of professional CVs for a more comprehensive job application.
