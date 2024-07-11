@@ -38,7 +38,7 @@ import { logout } from "@/features/authslice";
                   <DialogHeader>
                       <DialogTitle>Logout Confirmation</DialogTitle>
                       <DialogDescription>
-                          Type "confirm" to make a confirmation for your logout
+                          Type confirm to make a confirmation for your logout
                       </DialogDescription>
                   </DialogHeader>
                   <div className="grid gap-4 py-4">

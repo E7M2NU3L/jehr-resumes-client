@@ -17,7 +17,7 @@ const Simplify = () => {
                 <h1 className='text-2xl md:text-5xl font-bold text-dark-5' style={{
                     fontFamily: "Anton SC, sans-serif"
                 }}>
-                Unlock Your Resume's Full Potential
+                Unlock Your Resumes Full Potential
                 </h1>
             </main>
             <main className='max-w-2xl'>

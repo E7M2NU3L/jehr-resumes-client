@@ -52,7 +52,7 @@ export const AuthForm: React.FC = () => {
       </div>
       <button className="button-submit">Sign In</button>
       <p className="p">
-        Don't have an account? <span className="span">Sign Up</span>
+        Dont have an account? <span className="span">Sign Up</span>
       </p>
       <p className="p line">Or With</p>
       <div className="flex-row">

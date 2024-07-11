@@ -73,12 +73,12 @@ export default function FAQ() {
               <AccordionContent>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Yes, you can cancel your subscription at any time. We don't lock you into long-term contracts, and
+                    Yes, you can cancel your subscription at any time. We dont lock you into long-term contracts, and
                     there are no cancellation fees.
                   </p>
                   <p>
                     If you cancel your subscription, you will continue to have access to our platform until the end of
-                    your current billing cycle. After that, your account will be downgraded to the free plan, and you'll
+                    your current billing cycle. After that, your account will be downgraded to the free plan, and youll
                     lose access to any premium features.
                   </p>
                   <p>
